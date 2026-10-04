@@ -1,0 +1,834 @@
+{
+  "validation_date": "2026-10-04T17:22:42.849124",
+  "test_results": {
+    "Enhanced": {
+      "advanced_phishing": [
+        {
+          "url": "https://onlinessbi.sbi.bank.in/",
+          "description": "SBI typosquatting (missing 'e' in onlinesbi)",
+          "expected": "PHISHING",
+          "predicted": "PHISHING",
+          "confidence": 0.9997,
+          "phishing_probability": 0.9997,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [
+            "Potential typosquatting detected (lookalike domain)"
+          ],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "Domain resembles legitimate service",
+            "No unicode attack characters",
+            "Normal TLD structure",
+            "Low URL complexity (appears normal)",
+            "Normal domain structure (not randomly generated)"
+          ]
+        },
+        {
+          "url": "https://payp4l.com/signin",
+          "description": "PayPal with number substitution",
+          "expected": "PHISHING",
+          "predicted": "PHISHING",
+          "confidence": 1.0,
+          "phishing_probability": 1.0,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [
+            "Potential typosquatting detected (lookalike domain)",
+            "Suspicious path keywords detected (login, verify, secure, etc.)"
+          ],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "Domain resembles legitimate service",
+            "No unicode attack characters",
+            "Normal TLD structure",
+            "Low URL complexity (appears normal)",
+            "Normal domain structure (not randomly generated)"
+          ]
+        },
+        {
+          "url": "https://micros\u03bfft.com/login",
+          "description": "Microsoft with Greek omicron",
+          "expected": "PHISHING",
+          "predicted": "PHISHING",
+          "confidence": 0.9998,
+          "phishing_probability": 0.9998,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [
+            "Unicode/homograph attack characters detected",
+            "Suspicious path keywords detected (login, verify, secure, etc.)"
+          ],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "Domain resembles legitimate service",
+            "Normal TLD structure",
+            "Low URL complexity (appears normal)"
+          ]
+        },
+        {
+          "url": "https://secure.amazon-account.verify.phish.ru/signin?redirect=amazon.com",
+          "description": "Amazon subdomain abuse with redirect",
+          "expected": "PHISHING",
+          "predicted": "PHISHING",
+          "confidence": 1.0,
+          "phishing_probability": 1.0,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [
+            "Excessive subdomains detected (3)",
+            "Misleading TLD structure detected (e.g., service.com.malicious.ru)",
+            "Suspicious top-level domain (commonly used for phishing)",
+            "Suspicious path keywords detected (login, verify, secure, etc.)",
+            "Suspicious query parameters detected (redirect, user, password, etc.)",
+            "High domain randomness (possible generated domain)",
+            "Multiple service names in domain (e.g., paypal-amazon)"
+          ],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "No unicode attack characters"
+          ]
+        },
+        {
+          "url": "https://apple-id-verify.malicious.tk/signin?user=victim@gmail.com",
+          "description": "Apple ID with suspicious TLD and parameters",
+          "expected": "PHISHING",
+          "predicted": "PHISHING",
+          "confidence": 1.0,
+          "phishing_probability": 1.0,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [
+            "@ symbol present in URL (common phishing trick)",
+            "Suspicious top-level domain (commonly used for phishing)",
+            "Suspicious path keywords detected (login, verify, secure, etc.)",
+            "Suspicious query parameters detected (redirect, user, password, etc.)",
+            "High domain randomness (possible generated domain)"
+          ],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "No unicode attack characters",
+            "Normal TLD structure",
+            "Low URL complexity (appears normal)"
+          ]
+        },
+        {
+          "url": "http://192.168.1.100:8080/banking/login.php?next=chase.com",
+          "description": "IP-based phishing with port and redirect",
+          "expected": "PHISHING",
+          "predicted": "PHISHING",
+          "confidence": 1.0,
+          "phishing_probability": 1.0,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [
+            "IP address used as hostname instead of domain name",
+            "Misleading TLD structure detected (e.g., service.com.malicious.ru)",
+            "Non-standard port number specified",
+            "Suspicious path keywords detected (login, verify, secure, etc.)",
+            "Suspicious query parameters detected (redirect, user, password, etc.)"
+          ],
+          "positive_indicators": [
+            "No unicode attack characters",
+            "Low URL complexity (appears normal)",
+            "Normal domain structure (not randomly generated)"
+          ]
+        },
+        {
+          "url": "https://netflix-billing-update.verify-account.xyz/payment",
+          "description": "Netflix billing scam with multiple suspicious elements",
+          "expected": "PHISHING",
+          "predicted": "PHISHING",
+          "confidence": 0.9999,
+          "phishing_probability": 0.9999,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [
+            "High domain randomness (possible generated domain)"
+          ],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "No unicode attack characters",
+            "Normal TLD structure",
+            "Low URL complexity (appears normal)"
+          ]
+        },
+        {
+          "url": "https://bit.ly/3fake-paypal-urgent",
+          "description": "URL shortener hiding destination",
+          "expected": "PHISHING",
+          "predicted": "PHISHING",
+          "confidence": 1.0,
+          "phishing_probability": 1.0,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [
+            "Suspicious path keywords detected (login, verify, secure, etc.)"
+          ],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "No unicode attack characters",
+            "Normal TLD structure",
+            "Low URL complexity (appears normal)",
+            "Normal domain structure (not randomly generated)"
+          ]
+        },
+        {
+          "url": "https://google-security-alert.immediate-action.ml/verify?token=urgent",
+          "description": "Google security alert with urgent parameters",
+          "expected": "PHISHING",
+          "predicted": "PHISHING",
+          "confidence": 1.0,
+          "phishing_probability": 1.0,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [
+            "Suspicious top-level domain (commonly used for phishing)",
+            "Suspicious path keywords detected (login, verify, secure, etc.)",
+            "Suspicious query parameters detected (redirect, user, password, etc.)"
+          ],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "No unicode attack characters",
+            "Normal TLD structure",
+            "Low URL complexity (appears normal)"
+          ]
+        },
+        {
+          "url": "https://paypal.com.account-suspended.verify-now.gq/restore",
+          "description": "Misleading TLD structure",
+          "expected": "PHISHING",
+          "predicted": "PHISHING",
+          "confidence": 1.0,
+          "phishing_probability": 1.0,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [
+            "Excessive subdomains detected (3)",
+            "Misleading TLD structure detected (e.g., service.com.malicious.ru)",
+            "Suspicious top-level domain (commonly used for phishing)",
+            "High domain randomness (possible generated domain)"
+          ],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "No unicode attack characters",
+            "Low URL complexity (appears normal)"
+          ]
+        }
+      ],
+      "legitimate_services": [
+        {
+          "url": "https://onlinesbi.sbi.co.in/",
+          "description": "Legitimate SBI online banking",
+          "expected": "LEGITIMATE",
+          "predicted": "PHISHING",
+          "confidence": 0.7663,
+          "phishing_probability": 0.7663,
+          "correct_prediction": false,
+          "good_detection": false,
+          "warnings": [],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "Domain resembles legitimate service",
+            "No unicode attack characters",
+            "Normal TLD structure",
+            "Low URL complexity (appears normal)",
+            "Normal domain structure (not randomly generated)"
+          ]
+        },
+        {
+          "url": "https://www.paypal.com/signin",
+          "description": "Legitimate PayPal login",
+          "expected": "LEGITIMATE",
+          "predicted": "LEGITIMATE",
+          "confidence": 0.9988,
+          "phishing_probability": 0.0012,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [
+            "Suspicious path keywords detected (login, verify, secure, etc.)"
+          ],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "Domain resembles legitimate service",
+            "No unicode attack characters",
+            "Normal TLD structure",
+            "Low URL complexity (appears normal)",
+            "Normal domain structure (not randomly generated)"
+          ]
+        },
+        {
+          "url": "https://login.microsoftonline.com/",
+          "description": "Legitimate Microsoft login",
+          "expected": "LEGITIMATE",
+          "predicted": "LEGITIMATE",
+          "confidence": 0.9833,
+          "phishing_probability": 0.0167,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "Domain resembles legitimate service",
+            "No unicode attack characters",
+            "Normal TLD structure",
+            "Low URL complexity (appears normal)"
+          ]
+        },
+        {
+          "url": "https://signin.aws.amazon.com/console",
+          "description": "Legitimate AWS console",
+          "expected": "LEGITIMATE",
+          "predicted": "LEGITIMATE",
+          "confidence": 0.9945,
+          "phishing_probability": 0.0055,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [
+            "Multiple service names in domain (e.g., paypal-amazon)"
+          ],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "Domain resembles legitimate service",
+            "No unicode attack characters",
+            "Normal TLD structure",
+            "Low URL complexity (appears normal)"
+          ]
+        },
+        {
+          "url": "https://appleid.apple.com/account",
+          "description": "Legitimate Apple ID",
+          "expected": "LEGITIMATE",
+          "predicted": "LEGITIMATE",
+          "confidence": 0.9987,
+          "phishing_probability": 0.0013,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [
+            "Suspicious path keywords detected (login, verify, secure, etc.)"
+          ],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "Domain resembles legitimate service",
+            "No unicode attack characters",
+            "Normal TLD structure",
+            "Low URL complexity (appears normal)",
+            "Normal domain structure (not randomly generated)"
+          ]
+        },
+        {
+          "url": "https://www.chase.com/personal/checking",
+          "description": "Legitimate Chase banking",
+          "expected": "LEGITIMATE",
+          "predicted": "LEGITIMATE",
+          "confidence": 1.0,
+          "phishing_probability": 0.0,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "Domain resembles legitimate service",
+            "No unicode attack characters",
+            "Normal TLD structure",
+            "Low URL complexity (appears normal)",
+            "Normal domain structure (not randomly generated)"
+          ]
+        },
+        {
+          "url": "https://www.netflix.com/browse",
+          "description": "Legitimate Netflix",
+          "expected": "LEGITIMATE",
+          "predicted": "LEGITIMATE",
+          "confidence": 0.9999,
+          "phishing_probability": 0.0001,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "Domain resembles legitimate service",
+            "No unicode attack characters",
+            "Normal TLD structure",
+            "Low URL complexity (appears normal)"
+          ]
+        },
+        {
+          "url": "https://github.com/user/repository",
+          "description": "Legitimate GitHub repository",
+          "expected": "LEGITIMATE",
+          "predicted": "LEGITIMATE",
+          "confidence": 1.0,
+          "phishing_probability": 0.0,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "Domain resembles legitimate service",
+            "No unicode attack characters",
+            "Normal TLD structure",
+            "Low URL complexity (appears normal)"
+          ]
+        },
+        {
+          "url": "https://accounts.google.com/signin/v2/identifier",
+          "description": "Legitimate Google accounts",
+          "expected": "LEGITIMATE",
+          "predicted": "LEGITIMATE",
+          "confidence": 0.8805,
+          "phishing_probability": 0.1195,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [
+            "Suspicious path keywords detected (login, verify, secure, etc.)"
+          ],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "Domain resembles legitimate service",
+            "No unicode attack characters",
+            "Normal TLD structure",
+            "Low URL complexity (appears normal)"
+          ]
+        },
+        {
+          "url": "https://stackoverflow.com/questions/ask",
+          "description": "Legitimate Stack Overflow",
+          "expected": "LEGITIMATE",
+          "predicted": "LEGITIMATE",
+          "confidence": 1.0,
+          "phishing_probability": 0.0,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "Domain resembles legitimate service",
+            "No unicode attack characters",
+            "Normal TLD structure",
+            "Low URL complexity (appears normal)"
+          ]
+        }
+      ],
+      "edge_cases": [
+        {
+          "url": "https://www.amazon.co.uk/gp/product/B08N5WRWNW",
+          "description": "Amazon UK with long product URL",
+          "expected": "LEGITIMATE",
+          "predicted": "PHISHING",
+          "confidence": 0.7614,
+          "phishing_probability": 0.7614,
+          "correct_prediction": false,
+          "good_detection": false,
+          "warnings": [
+            "Multiple service names in domain (e.g., paypal-amazon)"
+          ],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "Domain resembles legitimate service",
+            "No unicode attack characters",
+            "Normal TLD structure",
+            "Low URL complexity (appears normal)"
+          ]
+        },
+        {
+          "url": "https://subdomain.enterprise.company.com/app/dashboard",
+          "description": "Corporate subdomain structure",
+          "expected": "LEGITIMATE",
+          "predicted": "PHISHING",
+          "confidence": 0.8409,
+          "phishing_probability": 0.8409,
+          "correct_prediction": false,
+          "good_detection": false,
+          "warnings": [],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "Domain resembles legitimate service",
+            "No unicode attack characters",
+            "Normal TLD structure",
+            "Low URL complexity (appears normal)"
+          ]
+        },
+        {
+          "url": "https://www.paypal-community.com/t5/About-Protections-archive/bd-p/protections_archive",
+          "description": "PayPal community forum (legitimate)",
+          "expected": "LEGITIMATE",
+          "predicted": "PHISHING",
+          "confidence": 0.9028,
+          "phishing_probability": 0.9028,
+          "correct_prediction": false,
+          "good_detection": false,
+          "warnings": [
+            "Long URL detected (over 75 characters)"
+          ],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "Domain resembles legitimate service",
+            "No unicode attack characters",
+            "Normal TLD structure"
+          ]
+        },
+        {
+          "url": "https://login.salesforce-communities.com/",
+          "description": "Salesforce communities login",
+          "expected": "LEGITIMATE",
+          "predicted": "PHISHING",
+          "confidence": 0.9999,
+          "phishing_probability": 0.9999,
+          "correct_prediction": false,
+          "good_detection": false,
+          "warnings": [],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "Domain resembles legitimate service",
+            "No unicode attack characters",
+            "Normal TLD structure",
+            "Low URL complexity (appears normal)"
+          ]
+        },
+        {
+          "url": "https://support-microsoft.fake-domain.xyz/",
+          "description": "Fake Microsoft support",
+          "expected": "PHISHING",
+          "predicted": "PHISHING",
+          "confidence": 1.0,
+          "phishing_probability": 1.0,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [
+            "High domain randomness (possible generated domain)"
+          ],
+          "positive_indicators": [
+            "HTTPS protocol detected",
+            "No unicode attack characters",
+            "Normal TLD structure",
+            "Low URL complexity (appears normal)"
+          ]
+        }
+      ],
+      "summary": {
+        "total_tests": 25,
+        "correct_predictions": 20,
+        "good_detections": 20,
+        "accuracy": 0.8,
+        "detection_rate": 0.8
+      }
+    },
+    "Original": {
+      "advanced_phishing": [
+        {
+          "url": "https://onlinessbi.sbi.bank.in/",
+          "description": "SBI typosquatting (missing 'e' in onlinesbi)",
+          "expected": "PHISHING",
+          "predicted": "PHISHING",
+          "confidence": 0.9832,
+          "phishing_probability": 0.9832,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "https://payp4l.com/signin",
+          "description": "PayPal with number substitution",
+          "expected": "PHISHING",
+          "predicted": "PHISHING",
+          "confidence": 0.9598,
+          "phishing_probability": 0.9598,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "https://micros\u03bfft.com/login",
+          "description": "Microsoft with Greek omicron",
+          "expected": "PHISHING",
+          "predicted": "LEGITIMATE",
+          "confidence": 0.8447,
+          "phishing_probability": 0.1553,
+          "correct_prediction": false,
+          "good_detection": false,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "https://secure.amazon-account.verify.phish.ru/signin?redirect=amazon.com",
+          "description": "Amazon subdomain abuse with redirect",
+          "expected": "PHISHING",
+          "predicted": "PHISHING",
+          "confidence": 0.9956,
+          "phishing_probability": 0.9956,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "https://apple-id-verify.malicious.tk/signin?user=victim@gmail.com",
+          "description": "Apple ID with suspicious TLD and parameters",
+          "expected": "PHISHING",
+          "predicted": "PHISHING",
+          "confidence": 1.0,
+          "phishing_probability": 1.0,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "http://192.168.1.100:8080/banking/login.php?next=chase.com",
+          "description": "IP-based phishing with port and redirect",
+          "expected": "PHISHING",
+          "predicted": "PHISHING",
+          "confidence": 1.0,
+          "phishing_probability": 1.0,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "https://netflix-billing-update.verify-account.xyz/payment",
+          "description": "Netflix billing scam with multiple suspicious elements",
+          "expected": "PHISHING",
+          "predicted": "PHISHING",
+          "confidence": 1.0,
+          "phishing_probability": 1.0,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "https://bit.ly/3fake-paypal-urgent",
+          "description": "URL shortener hiding destination",
+          "expected": "PHISHING",
+          "predicted": "PHISHING",
+          "confidence": 0.6587,
+          "phishing_probability": 0.6587,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "https://google-security-alert.immediate-action.ml/verify?token=urgent",
+          "description": "Google security alert with urgent parameters",
+          "expected": "PHISHING",
+          "predicted": "PHISHING",
+          "confidence": 1.0,
+          "phishing_probability": 1.0,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "https://paypal.com.account-suspended.verify-now.gq/restore",
+          "description": "Misleading TLD structure",
+          "expected": "PHISHING",
+          "predicted": "PHISHING",
+          "confidence": 0.9987,
+          "phishing_probability": 0.9987,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": []
+        }
+      ],
+      "legitimate_services": [
+        {
+          "url": "https://onlinesbi.sbi.co.in/",
+          "description": "Legitimate SBI online banking",
+          "expected": "LEGITIMATE",
+          "predicted": "LEGITIMATE",
+          "confidence": 0.8349,
+          "phishing_probability": 0.1651,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "https://www.paypal.com/signin",
+          "description": "Legitimate PayPal login",
+          "expected": "LEGITIMATE",
+          "predicted": "LEGITIMATE",
+          "confidence": 0.9021,
+          "phishing_probability": 0.0979,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "https://login.microsoftonline.com/",
+          "description": "Legitimate Microsoft login",
+          "expected": "LEGITIMATE",
+          "predicted": "PHISHING",
+          "confidence": 0.6047,
+          "phishing_probability": 0.6047,
+          "correct_prediction": false,
+          "good_detection": false,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "https://signin.aws.amazon.com/console",
+          "description": "Legitimate AWS console",
+          "expected": "LEGITIMATE",
+          "predicted": "LEGITIMATE",
+          "confidence": 0.8087,
+          "phishing_probability": 0.1913,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "https://appleid.apple.com/account",
+          "description": "Legitimate Apple ID",
+          "expected": "LEGITIMATE",
+          "predicted": "LEGITIMATE",
+          "confidence": 0.8316,
+          "phishing_probability": 0.1684,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "https://www.chase.com/personal/checking",
+          "description": "Legitimate Chase banking",
+          "expected": "LEGITIMATE",
+          "predicted": "LEGITIMATE",
+          "confidence": 0.9996,
+          "phishing_probability": 0.0004,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "https://www.netflix.com/browse",
+          "description": "Legitimate Netflix",
+          "expected": "LEGITIMATE",
+          "predicted": "LEGITIMATE",
+          "confidence": 0.8808,
+          "phishing_probability": 0.1192,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "https://github.com/user/repository",
+          "description": "Legitimate GitHub repository",
+          "expected": "LEGITIMATE",
+          "predicted": "LEGITIMATE",
+          "confidence": 0.9995,
+          "phishing_probability": 0.0005,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "https://accounts.google.com/signin/v2/identifier",
+          "description": "Legitimate Google accounts",
+          "expected": "LEGITIMATE",
+          "predicted": "LEGITIMATE",
+          "confidence": 0.9855,
+          "phishing_probability": 0.0145,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "https://stackoverflow.com/questions/ask",
+          "description": "Legitimate Stack Overflow",
+          "expected": "LEGITIMATE",
+          "predicted": "LEGITIMATE",
+          "confidence": 0.9975,
+          "phishing_probability": 0.0025,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": []
+        }
+      ],
+      "edge_cases": [
+        {
+          "url": "https://www.amazon.co.uk/gp/product/B08N5WRWNW",
+          "description": "Amazon UK with long product URL",
+          "expected": "LEGITIMATE",
+          "predicted": "LEGITIMATE",
+          "confidence": 0.99,
+          "phishing_probability": 0.01,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "https://subdomain.enterprise.company.com/app/dashboard",
+          "description": "Corporate subdomain structure",
+          "expected": "LEGITIMATE",
+          "predicted": "LEGITIMATE",
+          "confidence": 0.9841,
+          "phishing_probability": 0.0159,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "https://www.paypal-community.com/t5/About-Protections-archive/bd-p/protections_archive",
+          "description": "PayPal community forum (legitimate)",
+          "expected": "LEGITIMATE",
+          "predicted": "PHISHING",
+          "confidence": 0.8125,
+          "phishing_probability": 0.8125,
+          "correct_prediction": false,
+          "good_detection": false,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "https://login.salesforce-communities.com/",
+          "description": "Salesforce communities login",
+          "expected": "LEGITIMATE",
+          "predicted": "PHISHING",
+          "confidence": 0.983,
+          "phishing_probability": 0.983,
+          "correct_prediction": false,
+          "good_detection": false,
+          "warnings": [],
+          "positive_indicators": []
+        },
+        {
+          "url": "https://support-microsoft.fake-domain.xyz/",
+          "description": "Fake Microsoft support",
+          "expected": "PHISHING",
+          "predicted": "PHISHING",
+          "confidence": 0.9983,
+          "phishing_probability": 0.9983,
+          "correct_prediction": true,
+          "good_detection": true,
+          "warnings": [],
+          "positive_indicators": []
+        }
+      ],
+      "summary": {
+        "total_tests": 25,
+        "correct_predictions": 21,
+        "good_detections": 21,
+        "accuracy": 0.84,
+        "detection_rate": 0.84
+      }
+    }
+  },
+  "summary": "PhishGuard AI Enhanced Model Validation Report"
+}

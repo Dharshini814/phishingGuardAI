@@ -1,0 +1,86 @@
+{
+  "total_samples": 1447,
+  "phishing_samples": "698",
+  "legitimate_samples": "749",
+  "balance_ratio": 0.4823773324118867,
+  "sources": {
+    "Synthetic": 787,
+    "LegitPhish": 575,
+    "EdgePhish-5G": 51,
+    "Zenodo": 34
+  },
+  "url_length_stats": {
+    "count": 1447.0,
+    "mean": 40.145818935729096,
+    "std": 13.746374656094854,
+    "min": 19.0,
+    "25%": 30.0,
+    "50%": 37.0,
+    "75%": 49.0,
+    "max": 180.0
+  },
+  "domain_length_stats": {
+    "count": 1447.0,
+    "mean": 19.286109191430548,
+    "std": 7.464973571630161,
+    "min": 4.0,
+    "25%": 14.0,
+    "50%": 17.0,
+    "75%": 25.0,
+    "max": 53.0
+  },
+  "feature_counts": {
+    "has_ip_domain": {
+      "total_true": "65",
+      "percentage": 4.492052522460263
+    },
+    "has_suspicious_path": {
+      "total_true": "521",
+      "percentage": 36.005528680027645
+    },
+    "has_suspicious_params": {
+      "total_true": "156",
+      "percentage": 10.78092605390463
+    },
+    "is_https": {
+      "total_true": "1220",
+      "percentage": 84.31237042156185
+    },
+    "has_port": {
+      "total_true": "10",
+      "percentage": 0.691085003455425
+    },
+    "has_suspicious_chars": {
+      "total_true": "3",
+      "percentage": 0.2073255010366275
+    },
+    "has_typosquatting": {
+      "total_true": "29",
+      "percentage": 2.0041465100207327
+    },
+    "is_shortened": {
+      "total_true": "96",
+      "percentage": 6.63441603317208
+    },
+    "has_suspicious_tld": {
+      "total_true": "182",
+      "percentage": 12.577747062888736
+    },
+    "looks_like_legitimate": {
+      "total_true": "942",
+      "percentage": 65.10020732550103
+    },
+    "has_misleading_tld": {
+      "total_true": "39",
+      "percentage": 2.6952315134761573
+    }
+  },
+  "quality_stats": {
+    "original_count": 1992,
+    "cleaned_count": 1497,
+    "removed_count": 495,
+    "quality_issues": [
+      "Removed 495 duplicate URLs"
+    ]
+  }
+}

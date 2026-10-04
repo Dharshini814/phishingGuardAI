@@ -1,0 +1,58 @@
+MIT License
+
+Copyright (c) 2024 PhishGuard AI
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Third-Party Licenses
+
+This project uses the following open-source libraries:
+
+### Backend Dependencies
+- **FastAPI**: MIT License
+- **scikit-learn**: BSD License
+- **pandas**: BSD License
+- **numpy**: BSD License
+- **uvicorn**: BSD License
+- **pydantic**: MIT License
+
+### Frontend Dependencies
+- **React**: MIT License
+- **Vite**: MIT License
+- **Recharts**: MIT License
+- **Lucide React**: MIT License
+- **Axios**: MIT License
+
+### Dataset Attribution
+The training dataset includes URL patterns derived from academic research:
+- Mohammad, R., Thabtah, F., & McCluskey, L. (2012). "Phishing Websites Dataset." UCI Machine Learning Repository.
+
+## Educational Use Disclaimer
+
+This software is designed for educational and research purposes in the field of
+AI/ML applications to cybersecurity. While functional, it should not be used
+as the sole security solution in production environments without additional
+security measures and professional assessment.
+
+The machine learning models provide estimated assessments based on URL
+structural features and cannot guarantee the safety or malicious nature of
+any website. Always verify suspicious URLs through multiple security sources
+and professional security tools.
